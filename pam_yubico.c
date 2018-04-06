@@ -362,7 +362,7 @@ authorize_user_token_ldap (struct cfg *cfg,
 	      /* Compare each value for the attribute against the token id. */
 	      for (i = 0; vals[i] != NULL; i++)
 		{
-		  DBG("LDAP : Checking value %i: %s:%s",
+		  DBG("LDAP : Checking value %zu: %s:%s",
 		      i + 1,
 		      cfg->yubi_attr_prefix ? cfg->yubi_attr_prefix : "",
 		      vals[i]->bv_val);
